@@ -3,7 +3,8 @@ require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/reloader'
 require 'twitter'
-require_relative 'lib/twitter'
+require_relative 'lib/clashing_hashes/follower_clash'
+require_relative 'lib/follower_clash'
 
 get '/' do
   erb :index
